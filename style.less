@@ -1,0 +1,80 @@
+@color-black : #000000;
+@link-color-black: #000000;
+@color-grey: #B1B1B1;
+@link-color-grey: #B1B1B1;
+@font-roboto :'SF Compact Display',Roboto;
+@mb-heading:52px;
+
+img{
+    height: 100% !important;
+    width: 100%;
+    object-fit: cover;
+}
+body{
+    font-family: @font-roboto;
+}
+section{
+    padding: 70px 0;
+}
+.card-design{
+    .container{
+        max-width: 765px;
+    }
+}
+.main-title{
+    margin-bottom: @mb-heading;
+    @media (max-width:575px) {
+        margin-bottom: @mb-heading - 20px;        
+    }
+    h1{
+        color: @color-black;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+
+.product-card-col{
+    margin-bottom: 15px;
+    .product-card{
+        border-radius: 8px;
+        overflow: hidden;
+        .product-card-img{
+            height: 248px;
+        }
+        .product-card-content{
+            padding: 10px 10px 16px;
+            background: #F9F8F8;
+            backdrop-filter: blur(1px);
+        }
+    }
+}
+.product-card-heading{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    a{
+        color: @color-black;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+            color: @color-black;            
+        }
+    }
+}
+.product-card-para{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: @color-grey;
+    margin-bottom: 0;    
+}
+
+.img-hover{
+    transition: filter ease-in-out .3s;
+    &:hover{
+        filter: brightness(0.8);
+    }
+}
